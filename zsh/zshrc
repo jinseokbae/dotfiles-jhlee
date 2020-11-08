@@ -7,7 +7,7 @@
 #  (BEGIN) zmodload zsh/zprof
 #  (END)   zprof >! ~/.zsh.startup.log
 # % repeat 3 {time zsh -i -c exit}
-
+# export PATH="/home/twjhlee/anaconda3/bin:$PATH"  # commented out by conda initialize
 
 # Default prompt host color for pure theme and tmux statusbar.
 # You may want to have different color per machine (use ANSI color name or xterm color codes [0-255]).
@@ -177,14 +177,18 @@ fi
 # see ~/.zshenv for $CONDA_EXE detection
 function _conda_initialize() {
 # >>> conda initialize >>>
-if [ -n "${CONDA_EXE}" ]; then
-  ${CONDA_EXE} config --set auto_activate_base false
-  __conda_setup="$(${CONDA_EXE} 'shell.zsh' 'hook' 2> /dev/null)"
-  if [ $? -eq 0 ]; then
-      eval "$__conda_setup"
-  fi
-  unset __conda_setup
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/twjhlee/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/twjhlee/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/twjhlee/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/twjhlee/anaconda3/bin:$PATH"
+    fi
 fi
+unset __conda_setup
 # <<< conda initialize <<<
 }
 # Note: conda initialize is slow (0.3 sec), so execute lazily
@@ -193,3 +197,7 @@ conda() {
   _conda_initialize
   conda "$@"
 }
+
+export COPPELIASIM_ROOT='/home/twjhlee/Research/for_tilde/coppeliasim/'
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$COPPELIASIM_ROOT
+export QT_QPA_PLATFORM_PLUGIN_PATH=$COPPELIASIM_ROOT
