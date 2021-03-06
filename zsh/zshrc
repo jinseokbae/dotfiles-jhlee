@@ -201,3 +201,16 @@ conda() {
 export COPPELIASIM_ROOT='/home/twjhlee/Research/for_tilde/coppeliasim/'
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$COPPELIASIM_ROOT
 export QT_QPA_PLATFORM_PLUGIN_PATH=$COPPELIASIM_ROOT
+alias ece_util='ssh twjhlee@147.46.121.38 -p 22'
+alias euclid='ssh junholee@147.46.125.15 -p 7910'
+alias fermat='ssh junholee@147.47.174.31 -p 7910'       # No account
+alias gauss='ssh junholee@147.46.121.31 -p 7910'
+alias hilbert='ssh junholee@147.46.115.37 -p 7910'      # No account
+alias iu='ssh junholee@147.46.115.33 -p 7910'           # No account
+alias jarvis='ssh junholee@147.46.116.36 -p 7910' 
+alias blender='/home/twjhlee/blender/blender'
+alias pycharm='sh /home/twjhlee/pycharm/bin/pycharm.sh'
+
+# exec bash
+# ./home/twjhlee/NVIDIA_ISAAC/isaac-sim/python_samples/setenv.sh
+# exec zsh
