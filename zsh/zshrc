@@ -210,6 +210,7 @@ alias iu='ssh junholee@147.46.115.33 -p 7910'           # No account
 alias jarvis='ssh junholee@147.46.116.36 -p 7910' 
 alias blender='/home/twjhlee/blender/blender'
 alias pycharm='sh /home/twjhlee/pycharm/bin/pycharm.sh'
+export PATH=~/anaconda3/condabin:$PATH
 
 # exec bash
 # ./home/twjhlee/NVIDIA_ISAAC/isaac-sim/python_samples/setenv.sh
