@@ -199,14 +199,14 @@ conda() {
 }
 
 alias ece_util='ssh twjhlee@147.46.121.38 -p 22'
-alias euclid='ssh junholee@147.46.125.15 -p 7910'
-alias fermat='ssh junholee@147.47.174.31 -p 7910'
-alias gauss='ssh junholee@147.46.121.31 -p 7910'
-alias hilbert='ssh junholee@147.46.115.37 -p 7910'
+alias euclid='ssh junholee@euclid.3dv.kr -p 7910'
+alias fermat='ssh junholee@fermat.3dv.kr -p 7910'
+alias gauss='ssh junholee@gauss.3dv.kr -p 7910'
+alias hilbert='ssh junholee@hilbert.3dv.kr -p 7910'
 alias iu='ssh junholee@iu.3dv.kr -p 7910'
 alias dirac='ssh junholee@dirac.3dv.kr -p 7910'
-alias jarvis='ssh junholee@jarvis.3dv.kr -p 7910' 
-alias blender='/home/twjhlee/blender/blender'
+alias jarvis='ssh junholee@jarvis.3dv.kr -p 7910'
 alias pycharm='sh /home/twjhlee/pycharm/bin/pycharm.sh'
 export PATH=~/anaconda3/condabin:$PATH
+
 
