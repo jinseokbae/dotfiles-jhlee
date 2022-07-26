@@ -205,8 +205,13 @@ alias gauss='ssh junholee@gauss.3dv.kr -p 7910'
 alias hilbert='ssh junholee@hilbert.3dv.kr -p 7910'
 alias iu='ssh junholee@iu.3dv.kr -p 7910'
 alias dirac='ssh junholee@dirac.3dv.kr -p 7910'
+alias cauchy='ssh junholee@cauchy.3dv.kr -p 7910'
 alias jarvis='ssh junholee@jarvis.3dv.kr -p 7910'
 alias pycharm='sh /home/twjhlee/pycharm/bin/pycharm.sh'
+alias inmc='ssh -p 7910 suhyun@147.46.66.52'
 export PATH=~/anaconda3/condabin:$PATH
-
+export PATH=/usr/local/cuda-11.1/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda-11.1/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+alias blender='/home/twjhlee/blender/blender'
+alias matlab='/usr/local/MATLAB/R2021a/bin/matlab'
 
