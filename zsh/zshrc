@@ -198,20 +198,13 @@ conda() {
   conda "$@"
 }
 
-alias ece_util='ssh twjhlee@147.46.121.38 -p 22'
-alias euclid='ssh junholee@euclid.3dv.kr -p 7910'
-alias fermat='ssh junholee@fermat.3dv.kr -p 7910'
-alias gauss='ssh junholee@gauss.3dv.kr -p 7910'
-alias hilbert='ssh junholee@hilbert.3dv.kr -p 7910'
-alias iu='ssh junholee@iu.3dv.kr -p 7910'
-alias dirac='ssh junholee@dirac.3dv.kr -p 7910'
-alias cauchy='ssh junholee@cauchy.3dv.kr -p 7910'
-alias jarvis='ssh junholee@jarvis.3dv.kr -p 7910'
-alias pycharm='sh /home/twjhlee/pycharm/bin/pycharm.sh'
-alias inmc='ssh -p 7910 suhyun@147.46.66.52'
-export PATH=~/anaconda3/condabin:$PATH
-export PATH=/usr/local/cuda-11.1/bin${PATH:+:${PATH}}
-export LD_LIBRARY_PATH=/usr/local/cuda-11.1/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
-alias blender='/home/twjhlee/blender/blender'
-alias matlab='/usr/local/MATLAB/R2021a/bin/matlab'
+alias ece_util='ssh jinseokbae@147.46.116.108 -p 50123'
+alias euclid='ssh jsbae@euclid.3dv.kr -p 7910'
+alias fermat='ssh jsbae@fermat.3dv.kr -p 7910'
+alias gauss='ssh jsbae@gauss.3dv.kr -p 7910'
+alias hilbert='ssh jsbae@hilbert.3dv.kr -p 7910'
+alias iu='ssh jsbae@iu.3dv.kr -p 7910'
+alias dirac='ssh jsbae@dirac.3dv.kr -p 7910'
+alias cauchy='ssh jsbae@cauchy.3dv.kr -p 7910'
+alias jarvis='ssh jsbae@jarvis.3dv.kr -p 7910'
 
