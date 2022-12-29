@@ -208,3 +208,10 @@ alias dirac='ssh jsbae@dirac.3dv.kr -p 7910'
 alias cauchy='ssh jsbae@cauchy.3dv.kr -p 7910'
 alias jarvis='ssh jsbae@jarvis.3dv.kr -p 7910'
 
+upload(){
+    scp -P 50123 "$1" jinseokbae@147.46.116.108:~/ClonedRepo/IsaacGymEnvs4hoi/isaacgymenvs/runs
+}
+
+upload_sanbon(){
+    scp -P 8090 "$1" jinseok@211.211.44.51:~/ClonedRepo/IsaacGymEnvs4hoi/isaacgymenvs/runs
+}
